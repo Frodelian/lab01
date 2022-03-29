@@ -5,7 +5,7 @@
 sudo wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
 ```
 Задание №2 
-Разархивируйте скаченный файл в директорию ~/boost_1_69_0 __Жирный текст (bold)__
+Разархивируйте скаченный файл в директорию ~/boost_1_69_0
 ```
 tar -xvf boost_1_69_0.tar.gz
 ```
@@ -33,22 +33,29 @@ find . -not \( -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) | wc -l
 find -name "any.hpp"
 ```
 Задание №7
+Выведите в консоль все файлы, где упоминается последовательность boost::asio.
 ```
-sudo wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
+grep -lr boost::asio
 ```
 Задание №8
+Скомпилирутйе boost. 
 ```
-sudo wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
+./bootstrap.sh --prefix=boost_output
+./b2 install
 ```
 Задание №9
+Перенесите все скомпилированные на предыдущем шаге статические библиотеки в директорию ~/boost-libs.
 ```
-sudo wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
+mkdir ~/boost-libs
+mv * ~/boost-libs
 ```
 Задание №10
+Подсчитайте сколько занимает дискового пространства каждый файл в этой директории.
 ```
-sudo wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
+ls -hl
 ```
 Задание №11
+Найдите топ10 самых "тяжёлых".
 ```
-sudo wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0.tar.gz
+find . -type f -exec du -h {} +|sort -rh | head -n 10
 ```
