@@ -28,7 +28,7 @@ find -name "*.h" | wc -l
 find . -not \( -name "*.h" -o -name "*.hpp" -o -name "*.cpp" \) | wc -l
 ```
 Задание №6
-Найдите полный пусть до файла any.hpp внутри библиотеки boost.
+Найдите полный путь до файла any.hpp внутри библиотеки boost.
 ```
 find -name "any.hpp"
 ```
