@@ -7,7 +7,7 @@ sudo wget https://sourceforge.net/projects/boost/files/boost/1.69.0/boost_1_69_0
 ### Задание №2 
 #### Разархивируйте скаченный файл в директорию ~/boost_1_69_0
 ```
-tar -xvf boost_1_69_0.tar.gz
+tar -xf boost_1_69_0.tar.gz
 ```
 ### Задание №3 
 #### Подсчитайте количество файлов в директории ~/boost_1_69_0 не включая вложенные директории.
